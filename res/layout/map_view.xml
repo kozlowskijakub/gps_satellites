@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_mapView"
+              android:background="@android:color/white"
+                android:padding="8px">
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <Button
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Satellites"
+                android:onClick="drawGPS"></Button>
+        <Button
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start recording"
+                android:onClick="recording"></Button>
+
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="0px"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Longitude:"
+                  android:textColor="@android:color/black"
+                  android:padding="10px"/>
+        <TextView
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_longitude"
+                android:textColor="@android:color/black"
+                android:text="0"
+                android:padding="10px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="0px"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Lattitude:"
+                  android:textColor="@android:color/black"
+                  android:padding="10px"/>
+        <TextView android:layout_width="0px"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:id="@+id/tv_lattitude"
+                  android:textColor="@android:color/black"
+                  android:padding="10px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="0px"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Distance:"
+                  android:textColor="@android:color/black"
+                  android:padding="10px"/>
+        <TextView android:layout_width="0px"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:id="@+id/tv_distance"
+                  android:textColor="@android:color/black"
+                  android:padding="10px"/>
+    </LinearLayout>
+</LinearLayout>
